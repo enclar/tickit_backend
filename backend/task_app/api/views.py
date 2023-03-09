@@ -10,7 +10,7 @@ from task_app.api.serializers import TaskSerializer
 class TaskAV(APIView):
     def get(self, request):
         tasks = Task.objects.all()
-        serializer = TaskSerializer(tasks)
+        serializer = TaskSerializer(tasks, many=True)
         if len(serializer.data) != 0:
             return Response(serializer.data)
         else:
