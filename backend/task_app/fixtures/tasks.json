@@ -1,0 +1,26 @@
+[
+    {
+        "model": "task_app.Task",
+        "pk": 1,
+        "fields": {
+            "description": "Practice building fullstack application",
+            "completeBy": "2023-03-25"
+        }
+    },
+    {
+        "model": "task_app.Task",
+        "pk": 2,
+        "fields": {
+            "description": "Return library books",
+            "completeBy": "2023-03-17"
+        }
+    },
+    {
+        "model": "task_app.Task",
+        "pk": 3,
+        "fields": {
+            "description": "Buy birthday gift for Mum",
+            "completeBy": "2023-04-07"
+        }
+    }
+]
