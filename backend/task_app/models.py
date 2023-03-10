@@ -11,7 +11,7 @@ class List(models.Model):
     
 # Task Model
 class Task(models.Model):
-    list = models.ForeignKey(List, on_delete=models.CASCADE, default=1)
+    list = models.ForeignKey(List, related_name="tasks", on_delete=models.CASCADE, default=1)
     description = models.CharField(max_length=500)
     completed = models.BooleanField(default=False)
     completeBy = models.DateField()
