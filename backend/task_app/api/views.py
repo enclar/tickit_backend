@@ -5,11 +5,20 @@ from rest_framework import status
 from rest_framework import mixins
 from rest_framework import generics
 
-from task_app.models import Task
-from task_app.api.serializers import TaskSerializer
+from task_app.models import Task, List
+from task_app.api.serializers import TaskSerializer, ListSerializer
 
 # Create your views here.
 #! Creating views using generic class-based views
+class ListList(generics.ListCreateAPIView):
+    queryset = List.objects.all()
+    serializer_class = ListSerializer
+
+
+class ListDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = List.objects.all()
+    serializer_class = ListSerializer
+    
 class TaskList(generics.ListCreateAPIView):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer

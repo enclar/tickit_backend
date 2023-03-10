@@ -1,8 +1,25 @@
 [
     {
+        "model": "task_app.List",
+        "pk": 1,
+        "fields": {
+            "name": "My List",
+            "description": "A list for your to note your daily to-dos"
+        }
+    },
+    {
+        "model": "task_app.List",
+        "pk": 2,
+        "fields": {
+            "name": "Mum's 55th Birthday",
+            "description": "Things to do in preparation of Mum's 55th Birthday!"
+        }
+    },
+    {
         "model": "task_app.Task",
         "pk": 1,
         "fields": {
+            "list": 1,
             "description": "Practice building fullstack application",
             "completeBy": "2023-03-25"
         }
@@ -11,6 +28,7 @@
         "model": "task_app.Task",
         "pk": 2,
         "fields": {
+            "list": 1,
             "description": "Return library books",
             "completeBy": "2023-03-17"
         }
@@ -19,6 +37,7 @@
         "model": "task_app.Task",
         "pk": 3,
         "fields": {
+            "list": 2,
             "description": "Buy birthday gift for Mum",
             "completeBy": "2023-04-07"
         }
