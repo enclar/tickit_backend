@@ -145,6 +145,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CORS_ALLOWED_ORIGINS = [
-    'https://tickit.vercel.app/',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'https://tickit.vercel.app/',
+# ]
