@@ -11,4 +11,4 @@ class ListSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = List
-        fields = ['id', 'name', 'description']
+        fields = ['id', 'name', 'description', 'tasks']
