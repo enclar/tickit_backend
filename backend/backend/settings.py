@@ -31,7 +31,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'tickit-backend.onrender.com',
-    '127.0.0.1'
+    '127.0.0.1',
+    'localhost',
+    'tickit.onrender.com'
 ]
 
 
